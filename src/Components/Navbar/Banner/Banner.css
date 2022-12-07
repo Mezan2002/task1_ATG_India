@@ -1,0 +1,32 @@
+.banner {
+  width: 100%;
+  position: relative;
+}
+.banner::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: inline-block;
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0.45) 0%,
+    rgba(0, 0, 0, 0.6) 100%
+  );
+}
+.bannerText {
+  color: white;
+  position: absolute;
+  left: 200px;
+  top: 500px;
+}
+.bannerText h4 {
+  font-size: 36px;
+  font-weight: 700;
+}
+.bannerText p {
+  font-size: 18px;
+  font-weight: 400;
+}

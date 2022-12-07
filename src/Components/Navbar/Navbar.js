@@ -22,7 +22,7 @@ const Navbar = () => {
               className="searchField"
             />
           </form>
-          <div className="d-flex" type="submit">
+          <div className="d-flex mt-2" type="submit">
             <p>Create account.</p>
             <p className="createAccountBtn">
               It's free!
