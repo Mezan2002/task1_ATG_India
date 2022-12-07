@@ -1,0 +1,28 @@
+.locationField {
+  border: none;
+  border-bottom: 2px solid #b8b8b8;
+  padding: 11px 50px 11px 30px;
+  font-size: 18px;
+  font-weight: 500;
+}
+.locationIcon {
+  font-size: 20px;
+  position: absolute;
+  top: 55px;
+}
+.locationField {
+  outline: none;
+}
+.locationField::placeholder {
+  font-size: 18px;
+  font-weight: 500;
+}
+.pencilIcon {
+  font-size: 20px;
+  position: absolute;
+  top: 60px;
+  right: 5px;
+}
+.note {
+  margin-top: 32px;
+}
