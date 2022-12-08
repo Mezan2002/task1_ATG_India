@@ -1,5 +1,5 @@
 import React from "react";
-import forestImage from "../../images/forestImage.jpg";
+import image from "../../images/forestImage.svg";
 import "./ArticleCard.css";
 
 const ArticleCard = () => {
@@ -8,7 +8,7 @@ const ArticleCard = () => {
       <div className="container d-flex justify-content-around">
         <div className="articleCards">
           <div class="card mb-3">
-            <img src={forestImage} className="card-img-top cardImage" alt="" />
+            <img src={image} className="card-img-top cardImage" alt="" />
             <div class="card-body">
               <h5 class="card-title">Card title</h5>
               <p class="card-text">
@@ -39,12 +39,12 @@ const ArticleCard = () => {
             </span>
           </div>
           <div className="note d-flex">
-            <p>
+            <span>
               <i class="fa-solid fa-circle-exclamation"></i>
-            </p>
-            <p>
-              Your location will help us serve better and extend a personalised
-              experience.
+            </span>
+            <p className="ms-2">
+              Your location will help us serve better
+              <br /> and extend a personalised experience.
             </p>
           </div>
         </div>
