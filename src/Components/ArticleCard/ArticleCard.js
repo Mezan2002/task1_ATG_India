@@ -11,7 +11,7 @@ import "./ArticleCard.css";
 const ArticleCard = () => {
   return (
     <div>
-      <div className="container d-flex justify-content-around">
+      <div className="container d-flex justify-content-lg-between">
         <div className="articleCardContainer">
           <div className="articleCards">
             <div class="card mb-3">
@@ -38,17 +38,17 @@ const ArticleCard = () => {
                     </p>
                     <ul class="dropdown-menu dropdown-menu-end">
                       <li>
-                        <a class="dropdown-item" href="#">
+                        <a class="dropdown-item" href="/">
                           Edit
                         </a>
                       </li>
                       <li>
-                        <a class="dropdown-item" href="#">
+                        <a class="dropdown-item" href="/">
                           Report
                         </a>
                       </li>
                       <li>
-                        <a class="dropdown-item" href="#">
+                        <a class="dropdown-item" href="/">
                           Option 3
                         </a>
                       </li>
@@ -100,17 +100,17 @@ const ArticleCard = () => {
                     </p>
                     <ul class="dropdown-menu dropdown-menu-end">
                       <li>
-                        <a class="dropdown-item" href="#">
+                        <a class="dropdown-item" href="/">
                           Edit
                         </a>
                       </li>
                       <li>
-                        <a class="dropdown-item" href="#">
+                        <a class="dropdown-item" href="/">
                           Report
                         </a>
                       </li>
                       <li>
-                        <a class="dropdown-item" href="#">
+                        <a class="dropdown-item" href="/">
                           Option 3
                         </a>
                       </li>
@@ -159,17 +159,17 @@ const ArticleCard = () => {
                     </p>
                     <ul class="dropdown-menu dropdown-menu-end">
                       <li>
-                        <a class="dropdown-item" href="#">
+                        <a class="dropdown-item" href="/">
                           Edit
                         </a>
                       </li>
                       <li>
-                        <a class="dropdown-item" href="#">
+                        <a class="dropdown-item" href="/">
                           Report
                         </a>
                       </li>
                       <li>
-                        <a class="dropdown-item" href="#">
+                        <a class="dropdown-item" href="/">
                           Option 3
                         </a>
                       </li>
@@ -235,17 +235,17 @@ const ArticleCard = () => {
                     </p>
                     <ul class="dropdown-menu dropdown-menu-end">
                       <li>
-                        <a class="dropdown-item" href="#">
+                        <a class="dropdown-item" href="/">
                           Edit
                         </a>
                       </li>
                       <li>
-                        <a class="dropdown-item" href="#">
+                        <a class="dropdown-item" href="/">
                           Report
                         </a>
                       </li>
                       <li>
-                        <a class="dropdown-item" href="#">
+                        <a class="dropdown-item" href="/">
                           Option 3
                         </a>
                       </li>
@@ -270,7 +270,7 @@ const ArticleCard = () => {
                   </div>
                   <div className="w-100">
                     <button className="btn btn-outline-dark fw-bold text-success w-100">
-                      Visit Website
+                      Apply on Timesjobs
                     </button>
                   </div>
                 </div>
@@ -295,7 +295,7 @@ const ArticleCard = () => {
             </div>
           </div>
         </div>
-        <div className="sidebar">
+        <div className="sidebar me-5">
           <div className="position-relative">
             <span className="locationIcon">
               <i class="fa-solid fa-location-dot"></i>
