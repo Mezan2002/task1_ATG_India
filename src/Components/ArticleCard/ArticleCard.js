@@ -1,6 +1,11 @@
 import React from "react";
-import image from "../../images/forestImage.svg";
+import forestImage from "../../images/forestImage.svg";
+import doorImage from "../../images/doorImage.svg";
+import carImage from "../../images/carImage.svg";
 import user1 from "../../images/sarthakKamra.svg";
+import user2 from "../../images/sarahWest.svg";
+import user3 from "../../images/ronalJones.svg";
+import user4 from "../../images/josephGray.svg";
 import "./ArticleCard.css";
 
 const ArticleCard = () => {
@@ -10,7 +15,11 @@ const ArticleCard = () => {
         <div className="articleCardContainer">
           <div className="articleCards">
             <div class="card mb-3">
-              <img src={image} className="card-img-top cardImage" alt="" />
+              <img
+                src={forestImage}
+                className="card-img-top cardImage"
+                alt=""
+              />
               <div class="card-body">
                 <p className="categoryName">✍️ Article</p>
                 <div class="card-title d-flex justify-content-between articleCardsHeader">
@@ -46,7 +55,7 @@ const ArticleCard = () => {
                     </ul>
                   </div>
                 </div>
-                <p class="card-text">
+                <p class="card-text articleCardDescription">
                   I've worked in UX for the better part of a decade. From now
                   on, I plan to rei…
                 </p>
@@ -72,7 +81,7 @@ const ArticleCard = () => {
           </div>
           <div className="articleCards">
             <div class="card mb-3">
-              <img src={image} className="card-img-top cardImage" alt="" />
+              <img src={doorImage} className="card-img-top cardImage" alt="" />
               <div class="card-body">
                 <p className="categoryName">🔬️ Education</p>
                 <div class="card-title d-flex justify-content-between articleCardsHeader">
@@ -108,14 +117,14 @@ const ArticleCard = () => {
                     </ul>
                   </div>
                 </div>
-                <p class="card-text">
+                <p class="card-text articleCardDescription">
                   I've worked in UX for the better part of a decade. From now
                   on, I plan to rei…
                 </p>
                 <div class="card-text cardFooter d-flex align-items-center justify-content-between">
                   <div className="d-flex align-items-center">
-                    <img src={user1} alt="" />
-                    <p class="mb-0 ms-3">Sarthak Kamra</p>
+                    <img src={user2} alt="" />
+                    <p class="mb-0 ms-3">Sarah Wests</p>
                   </div>
                   <div className="d-flex justify-content-end w-50">
                     <p className="mb-0 mt-2">
@@ -134,14 +143,11 @@ const ArticleCard = () => {
           </div>
           <div className="articleCards">
             <div class="card mb-3">
-              <img src={image} className="card-img-top cardImage" alt="" />
+              <img src={carImage} className="card-img-top cardImage" alt="" />
               <div class="card-body">
-                <p className="categoryName">✍️ Article</p>
+                <p className="categoryName">🗓️ Meetup</p>
                 <div class="card-title d-flex justify-content-between articleCardsHeader">
-                  <h5>
-                    What if famous brands had regular fonts? <br /> Meet
-                    RegulaBrands!
-                  </h5>
+                  <h5>Finance & Investment Elite Social Mixer @Lujiazui</h5>
                   <div class="dropdown">
                     <p
                       class=""
@@ -170,14 +176,32 @@ const ArticleCard = () => {
                     </ul>
                   </div>
                 </div>
-                <p class="card-text">
-                  I've worked in UX for the better part of a decade. From now
-                  on, I plan to rei…
-                </p>
+                <div class="card-text articleCardTags">
+                  <div className="d-flex">
+                    <p className="date ">
+                      {" "}
+                      <span className="">
+                        <i class="fa-solid fa-calendar-day me-2"></i>
+                      </span>{" "}
+                      Fri, 12 Oct, 2018
+                    </p>
+                    <p>
+                      <span className="me-2">
+                        <i class="fa-solid fa-location-dot"></i>
+                      </span>
+                      Ahmedabad, India
+                    </p>
+                  </div>
+                  <div className="w-100">
+                    <button className="btn btn-outline-dark fw-bold text-danger w-100">
+                      Visit Website
+                    </button>
+                  </div>
+                </div>
                 <div class="card-text cardFooter d-flex align-items-center justify-content-between">
                   <div className="d-flex align-items-center">
-                    <img src={user1} alt="" />
-                    <p class="mb-0 ms-3">Sarthak Kamra</p>
+                    <img src={user3} alt="" />
+                    <p class="mb-0 ms-3">Ronal Jones</p>
                   </div>
                   <div className="d-flex justify-content-end w-50">
                     <p className="mb-0 mt-2">
@@ -196,14 +220,10 @@ const ArticleCard = () => {
           </div>
           <div className="articleCards">
             <div class="card mb-3">
-              <img src={image} className="card-img-top cardImage" alt="" />
               <div class="card-body">
-                <p className="categoryName">✍️ Article</p>
+                <p className="categoryName">💼️ Job</p>
                 <div class="card-title d-flex justify-content-between articleCardsHeader">
-                  <h5>
-                    What if famous brands had regular fonts? <br /> Meet
-                    RegulaBrands!
-                  </h5>
+                  <h5>Software Developer</h5>
                   <div class="dropdown">
                     <p
                       class=""
@@ -232,14 +252,32 @@ const ArticleCard = () => {
                     </ul>
                   </div>
                 </div>
-                <p class="card-text">
-                  I've worked in UX for the better part of a decade. From now
-                  on, I plan to rei…
-                </p>
+                <div class="card-text articleCardTags">
+                  <div className="d-flex">
+                    <p className="date ">
+                      {" "}
+                      <span className="me-2">
+                        <i class="fa-solid fa-briefcase"></i>
+                      </span>{" "}
+                      Innovaccer Analytics Private Ltd.
+                    </p>
+                    <p>
+                      <span className="me-2">
+                        <i class="fa-solid fa-location-dot"></i>
+                      </span>
+                      Noida, India
+                    </p>
+                  </div>
+                  <div className="w-100">
+                    <button className="btn btn-outline-dark fw-bold text-success w-100">
+                      Visit Website
+                    </button>
+                  </div>
+                </div>
                 <div class="card-text cardFooter d-flex align-items-center justify-content-between">
                   <div className="d-flex align-items-center">
-                    <img src={user1} alt="" />
-                    <p class="mb-0 ms-3">Sarthak Kamra</p>
+                    <img src={user4} alt="" />
+                    <p class="mb-0 ms-3">Joseph Gray</p>
                   </div>
                   <div className="d-flex justify-content-end w-50">
                     <p className="mb-0 mt-2">

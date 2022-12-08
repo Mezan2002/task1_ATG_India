@@ -23,3 +23,21 @@
   color: black;
   margin-left: 7px;
 }
+.modalCloseBtn {
+  position: absolute;
+  top: -35px;
+  right: -15px;
+  border: none;
+  background: transparent;
+}
+.modalHeader {
+  background: #effff4;
+  padding: 18px 0;
+  border-radius: 10px;
+}
+.modalTitle {
+  text-align: center;
+}
+.miniText {
+  font-size: 13px;
+}

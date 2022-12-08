@@ -49,3 +49,16 @@
   background-color: #edeef0;
   border-radius: 2px;
 }
+.articleCardDescription {
+  font-size: 19px;
+  margin-bottom: 32px;
+}
+.articleCardTags {
+  font-size: 18px;
+  margin-bottom: 32px;
+  margin-top: -18px;
+  font-weight: 600;
+}
+.date {
+  margin-right: 48px;
+}
