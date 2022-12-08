@@ -2,6 +2,8 @@ import React from "react";
 import logo from "../../logo.svg";
 import "./Navbar.css";
 import loveImage from "../../images/love.svg";
+import fbIcon from "../../images/fbIcon.svg";
+import googleIcon from "../../images/google.svg";
 
 const Navbar = () => {
   return (
@@ -63,7 +65,7 @@ const Navbar = () => {
                     <i class="fa-regular fa-circle-xmark fs-4 text-white"></i>
                   </button>
                 </div>
-                <div class="modal-body mt-4">
+                <div class="modal-body mt-4 pb-5 px-4">
                   <div className="d-flex">
                     <div className="w-50">
                       <h3 className="mb-4">Create Account</h3>
@@ -98,7 +100,7 @@ const Navbar = () => {
                           />
                           <label for="flotingEmail">Email address</label>
                         </div>
-                        <div class="form-floating">
+                        <div class="form-floating position-relative">
                           <input
                             type="password"
                             class="form-control rounded-0"
@@ -106,6 +108,9 @@ const Navbar = () => {
                             placeholder="Password"
                             autoComplete="off"
                           />
+                          <span className="position-absolute eyeIcon">
+                            <i class="fa-regular fa-eye"></i>
+                          </span>
                           <label for="floatingPassword">Password</label>
                         </div>
                         <div class="form-floating">
@@ -122,16 +127,18 @@ const Navbar = () => {
                         </div>
                         <button
                           type="submit"
-                          className="btn btn-primary rounded-5 w-100 py-3 fs-6 fw-bold my-4"
+                          className="btn btn-primary rounded-5 w-100 py-2 fs-6 fw-bold my-4"
                         >
                           Create Account
                         </button>
                       </form>
-                      <button className="btn btn-outline-dark w-100">
+                      <button className="btn btn-outline-dark w-100 d-flex align-items-center justify-content-center">
+                        <img src={fbIcon} alt="" className="me-2" />
                         Sign Up with Facebook
                       </button>
-                      <button className="btn btn-outline-dark w-100">
-                        Sign Up with Facebook
+                      <button className="btn btn-outline-dark w-100 mt-2">
+                        <img src={googleIcon} alt="" className="me-2" />
+                        Sign Up with Google
                       </button>
                     </div>
                     <div className="w-50">
@@ -139,8 +146,8 @@ const Navbar = () => {
                         Already have an account?{" "}
                         <span className="text-primary">Sign In</span>
                       </p>
-                      <img src={loveImage} alt="" className="w-100" />
-                      <p className="miniText">
+                      <img src={loveImage} alt="" className="w-100 mt-3" />
+                      <p className="miniText px-4">
                         By signing up, you agree to our Terms & conditions,
                         Privacy policy
                       </p>
