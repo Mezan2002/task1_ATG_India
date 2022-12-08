@@ -26,3 +26,26 @@
 .note {
   margin-top: 32px;
 }
+.articleCardsHeader h5 {
+  font-size: 22px;
+  font-weight: 600;
+}
+.articleCardsHeader p {
+  font-size: 22px;
+  font-weight: 600;
+}
+.categoryName {
+  margin-bottom: 10px;
+  font-size: 18px;
+  font-weight: 500;
+}
+.cardFooter {
+  font-size: 18px;
+  font-weight: 600;
+}
+.shareBtn {
+  margin-left: 40px;
+  padding: 8px 15px;
+  background-color: #edeef0;
+  border-radius: 2px;
+}
