@@ -27,7 +27,14 @@ const Banner = () => {
           <p>
             <i class="fa-solid fa-arrow-left fs-3 text-white"></i>
           </p>
-          <button className="btn joinGroupBtn text-white">Join Group</button>
+          <button
+            className="btn joinGroupBtn text-white"
+            type="button"
+            data-bs-toggle="modal"
+            data-bs-target="#signUpModal"
+          >
+            Join Group
+          </button>
         </div>
         <div className="bannerTextMobile">
           <h4>Computer Engineering</h4>

@@ -39,8 +39,9 @@
   text-align: center;
 }
 .miniText {
-  font-size: 11px;
+  font-size: 12px;
   margin-top: 15px;
+  text-align: center;
 }
 .eyeIcon {
   top: 18px;

@@ -56,7 +56,7 @@ const Tabs = () => {
       {/* Desktop tabs end */}
 
       {/* mobile tabs start */}
-      <div className="d-flex justify-content-between align-items-center px-3 my-4">
+      <div className="d-flex d-md-none justify-content-between align-items-center px-3 my-4">
         <h5 className="numberOfPosts">Posts(368)</h5>
         <button className="btn filterBtn">
           Filter: All{" "}
