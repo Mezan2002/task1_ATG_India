@@ -1,15 +1,15 @@
 import "./App.css";
 import ArticleCard from "./Components/ArticleCard/ArticleCard";
-import Articles from "./Components/Articles/Articles";
 import Banner from "./Components/Banner/Banner";
 import Navbar from "./Components/Navbar/Navbar";
+import Tabs from "./Components/Tabs/Tabs";
 
 function App() {
   return (
     <div className="app">
       <Navbar></Navbar>
       <Banner></Banner>
-      <Articles></Articles>
+      <Tabs></Tabs>
       <ArticleCard></ArticleCard>
     </div>
   );

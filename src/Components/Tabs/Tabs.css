@@ -1,0 +1,13 @@
+.articles {
+  margin-top: 47px;
+}
+.nav-link {
+  color: #000;
+}
+.numberOfPosts {
+  font-size: 14px;
+  font-weight: 700;
+}
+.filterBtn {
+  background: #f1f3f5;
+}
