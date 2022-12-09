@@ -4,7 +4,7 @@ import "./Articles.css";
 const Articles = () => {
   return (
     <div>
-      <div className="container articles d-flex justify-content-between">
+      <div className="container d-sm-none d-md-flex articles d-none justify-content-between">
         <div className="tabs">
           <ul className="nav">
             <li className="nav-item">

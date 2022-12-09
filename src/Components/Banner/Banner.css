@@ -30,3 +30,26 @@
   font-size: 18px;
   font-weight: 400;
 }
+.bannerTop {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+.joinGroupBtn {
+  position: absolute;
+  right: -318px;
+  border: 1px solid white;
+}
+.bannerTextMobile {
+  color: white;
+  position: absolute;
+  top: 164px;
+  left: 16px;
+}
+.bannerTextMobile h4 {
+  font-size: 17px;
+  font-weight: 700;
+}
+.bannerTextMobile p {
+  font-size: 12px;
+}

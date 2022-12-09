@@ -11,7 +11,7 @@ import "./ArticleCard.css";
 const ArticleCard = () => {
   return (
     <div>
-      <div className="container d-flex justify-content-lg-between">
+      <div className="container d-flex justify-content-between">
         <div className="articleCardContainer">
           <div className="articleCards">
             <div class="card mb-3">
@@ -66,7 +66,7 @@ const ArticleCard = () => {
                   </div>
                   <div className="d-flex justify-content-end w-50">
                     <p className="mb-0 mt-2">
-                      <span>
+                      <span className="d-none d-md-block">
                         <i class="fa-regular fa-eye me-2"></i>
                       </span>{" "}
                       1.4k views
@@ -295,7 +295,7 @@ const ArticleCard = () => {
             </div>
           </div>
         </div>
-        <div className="sidebar me-5">
+        <div className="sidebar me-5 d-none d-md-block">
           <div className="position-relative">
             <span className="locationIcon">
               <i class="fa-solid fa-location-dot"></i>
