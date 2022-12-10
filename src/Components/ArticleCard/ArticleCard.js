@@ -6,9 +6,13 @@ import user1 from "../../images/sarthakKamra.svg";
 import user2 from "../../images/sarahWest.svg";
 import user3 from "../../images/ronalJones.svg";
 import user4 from "../../images/josephGray.svg";
+import groupIcon1 from "../../images/groupIcon1.svg";
+import groupIcon2 from "../../images/groupIcon2.svg";
+import groupIcon3 from "../../images/groupIcon3.svg";
+import groupIcon4 from "../../images/groupIcon4.svg";
 import "./ArticleCard.css";
 
-const ArticleCard = () => {
+const ArticleCard = ({ loggedIn }) => {
   return (
     <div>
       {/* Desktop Article Card Start */}
@@ -296,32 +300,92 @@ const ArticleCard = () => {
             </div>
           </div>
         </div>
-        <div className="sidebar me-5 d-none d-md-block">
-          <div className="position-relative">
-            <span className="locationIcon">
-              <i className="fa-solid fa-location-dot"></i>
-            </span>
-            <input
-              type="text"
-              name=""
-              id=""
-              placeholder="Enter your location"
-              className="locationField mt-5"
-            />
-            <span>
-              <i className="fa-solid fa-pencil pencilIcon"></i>
-            </span>
+        {loggedIn === true ? (
+          <div className="sidebar me-5 d-none d-md-block">
+            <div className="position-relative">
+              <span className="locationIcon">
+                <i className="fa-solid fa-location-dot"></i>
+              </span>
+              <input
+                type="text"
+                name=""
+                id=""
+                placeholder="Enter your location"
+                className="locationField mt-5"
+              />
+              <span>
+                <i class="fa-solid fa-xmark xMarkIcon"></i>
+              </span>
+            </div>
+            <div className="note d-flex">
+              <span>
+                <i className="fa-solid fa-circle-exclamation"></i>
+              </span>
+              <p className="ms-2">
+                Your location will help us serve better
+                <br /> and extend a personalised experience.
+              </p>
+            </div>
+            <div className="recommendedGroups">
+              <h5>
+                {" "}
+                <span>
+                  <i class="fa-solid fa-thumbs-up me-2"></i>
+                </span>{" "}
+                Recommended Groups
+              </h5>
+              <div>
+                <div className="d-flex align-items-center justify-content-between mt-4">
+                  <img src={groupIcon1} alt="" />
+                  <p>Leisure</p>
+                  <button className="btn btn-outline-dark">Follow</button>
+                </div>
+                <div className="d-flex align-items-center justify-content-between">
+                  <img src={groupIcon2} alt="" />
+                  <p>Leisure</p>
+                  <button className="btn btn-outline-dark">Follow</button>
+                </div>
+                <div className="d-flex align-items-center justify-content-between">
+                  <img src={groupIcon3} alt="" />
+                  <p>Leisure</p>
+                  <button className="btn btn-outline-dark">Follow</button>
+                </div>
+                <div className="d-flex align-items-center justify-content-between">
+                  <img src={groupIcon4} alt="" />
+                  <p>Leisure</p>
+                  <button className="btn btn-outline-dark">Follow</button>
+                </div>
+              </div>
+            </div>
           </div>
-          <div className="note d-flex">
-            <span>
-              <i className="fa-solid fa-circle-exclamation"></i>
-            </span>
-            <p className="ms-2">
-              Your location will help us serve better
-              <br /> and extend a personalised experience.
-            </p>
+        ) : (
+          <div className="sidebar me-5 d-none d-md-block">
+            <div className="position-relative">
+              <span className="locationIcon">
+                <i className="fa-solid fa-location-dot"></i>
+              </span>
+              <input
+                type="text"
+                name=""
+                id=""
+                defaultValue={"Noida, India"}
+                className="locationField mt-5"
+              />
+              <span>
+                <i className="fa-solid fa-pencil pencilIcon"></i>
+              </span>
+            </div>
+            <div className="note d-flex">
+              <span>
+                <i className="fa-solid fa-circle-exclamation"></i>
+              </span>
+              <p className="ms-2">
+                Your location will help us serve better
+                <br /> and extend a personalised experience.
+              </p>
+            </div>
           </div>
-        </div>
+        )}
       </div>
       {/* Desktop Article Card End */}
 

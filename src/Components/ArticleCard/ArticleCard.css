@@ -17,7 +17,8 @@
   font-size: 18px;
   font-weight: 500;
 }
-.pencilIcon {
+.pencilIcon,
+.xMarkIcon {
   font-size: 20px;
   position: absolute;
   top: 60px;
@@ -85,4 +86,13 @@
   bottom: 18px;
   right: 18px;
   z-index: 100;
+}
+.recommendedGroups {
+  margin-top: 54px;
+}
+.recommendedGroups h5 {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 18px;
+  letter-spacing: 0.1em;
 }

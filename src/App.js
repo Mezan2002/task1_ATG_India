@@ -12,7 +12,7 @@ function App() {
       <Navbar loggedIn={loggedIn} setLoggedIn={setLoggedIn}></Navbar>
       <Banner></Banner>
       <Tabs loggedIn={loggedIn}></Tabs>
-      <ArticleCard></ArticleCard>
+      <ArticleCard loggedIn={loggedIn}></ArticleCard>
     </div>
   );
 }
