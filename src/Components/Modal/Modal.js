@@ -8,17 +8,17 @@ const Modal = () => {
     <div>
       {/* sign up modal start */}
       <div
-        class="modal fade"
+        className="modal fade"
         id="signUpModal"
         aria-hidden="true"
         aria-labelledby="signUpModalLabel"
         tabindex="-1"
       >
-        <div class="modal-dialog modal-dialog-centered modal-lg modal-fullscreen-md-down">
-          <div class="modal-content">
-            <div class="modalHeader d-md-block d-none">
+        <div className="modal-dialog modal-dialog-centered modal-lg modal-fullscreen-md-down">
+          <div className="modal-content rounded-4">
+            <div className="modalHeader d-md-block d-none">
               <h1
-                class="modal-title modalTitle fs-6 text-success"
+                className="modal-title modalTitle fs-6 text-success"
                 id="signUpModal"
               >
                 Let's learn, share & inspire each other with our passion for
@@ -26,14 +26,14 @@ const Modal = () => {
               </h1>
               <button
                 type="button"
-                class="modalCloseBtn"
+                className="modalCloseBtn"
                 data-bs-dismiss="modal"
                 aria-label="Close"
               >
-                <i class="fa-regular fa-circle-xmark fs-4 text-white"></i>
+                <i className="fa-regular fa-circle-xmark fs-4 text-white"></i>
               </button>
             </div>
-            <div class="modal-body mt-4 pb-5 px-4" id="SignUpModal">
+            <div className="modal-body mt-4 pb-5 px-4" id="SignUpModal">
               <div className="d-flex" id="signUpModal">
                 <div className="w-md-50">
                   <h3 className="mb-4 d-none d-md-block">Create Account</h3>
@@ -41,61 +41,61 @@ const Modal = () => {
                     <h3 className="mb-4">Create Account</h3>
                     <button
                       type="button"
-                      class="btn p-0 mobileModalCloseBtn"
+                      className="btn p-0 mobileModalCloseBtn"
                       data-bs-dismiss="modal"
                       aria-label="Close"
                     >
-                      <i class="fa-regular fa-circle-xmark fs-4"></i>
+                      <i className="fa-regular fa-circle-xmark fs-4"></i>
                     </button>
                   </div>
                   <form>
                     <div className="input-group">
-                      <div class="form-floating">
+                      <div className="form-floating">
                         <input
                           type="text"
-                          class="form-control rounded-0"
+                          className="form-control rounded-0"
                           id="flotingFirstName"
                           placeholder="name@example.com"
                         />
                         <label for="flotingFirstName">First Name</label>
                       </div>
-                      <div class="form-floating">
+                      <div className="form-floating">
                         <input
                           type="text"
-                          class="form-control rounded-0"
+                          className="form-control rounded-0"
                           id="flotingLastName"
                           placeholder="name@example.com"
                         />
                         <label for="flotingLastName">Last Name</label>
                       </div>
                     </div>
-                    <div class="form-floating">
+                    <div className="form-floating">
                       <input
                         type="email"
-                        class="form-control rounded-0"
+                        className="form-control rounded-0"
                         id="flotingEmail"
                         placeholder="name@example.com"
                         autoComplete="off"
                       />
                       <label for="flotingEmail">Email address</label>
                     </div>
-                    <div class="form-floating position-relative">
+                    <div className="form-floating position-relative">
                       <input
                         type="password"
-                        class="form-control rounded-0"
+                        className="form-control rounded-0"
                         id="floatingPassword"
                         placeholder="Password"
                         autoComplete="off"
                       />
                       <span className="position-absolute eyeIcon">
-                        <i class="fa-regular fa-eye"></i>
+                        <i className="fa-regular fa-eye"></i>
                       </span>
                       <label for="floatingPassword">Password</label>
                     </div>
-                    <div class="form-floating">
+                    <div className="form-floating">
                       <input
                         type="password"
-                        class="form-control rounded-0"
+                        className="form-control rounded-0"
                         id="floatingConfirmPassword"
                         placeholder="Confirm Password"
                         autoComplete="off"
@@ -173,17 +173,17 @@ const Modal = () => {
 
       {/* login modal start */}
       <div
-        class="modal fade"
+        className="modal fade"
         id="logInModal"
         aria-hidden="true"
         aria-labelledby="logInModalLabel"
         tabindex="-1"
       >
-        <div class="modal-dialog modal-dialog-centered modal-lg modal-fullscreen-md-down">
-          <div class="modal-content">
-            <div class="modalHeader d-md-block d-none">
+        <div className="modal-dialog modal-dialog-centered modal-lg modal-fullscreen-md-down">
+          <div className="modal-content rounded-4">
+            <div className="modalHeader d-md-block d-none">
               <h1
-                class="modal-title modalTitle fs-6 text-success"
+                className="modal-title modalTitle fs-6 text-success"
                 id="logInModal"
               >
                 Let's learn, share & inspire each other with our passion for
@@ -191,14 +191,14 @@ const Modal = () => {
               </h1>
               <button
                 type="button"
-                class="modalCloseBtn"
+                className="modalCloseBtn"
                 data-bs-dismiss="modal"
                 aria-label="Close"
               >
-                <i class="fa-regular fa-circle-xmark fs-4 text-white"></i>
+                <i className="fa-regular fa-circle-xmark fs-4 text-white"></i>
               </button>
             </div>
-            <div class="modal-body mt-4 pb-5 px-4" id="logInModal">
+            <div className="modal-body mt-4 pb-5 px-4" id="logInModal">
               <div className="container">
                 <div className="row">
                   <div className="col-md-6">
@@ -209,34 +209,34 @@ const Modal = () => {
                           <h3 className="mb-4">Sign In</h3>
                           <button
                             type="button"
-                            class="btn p-0 mobileModalCloseBtn"
+                            className="btn p-0 mobileModalCloseBtn"
                             data-bs-dismiss="modal"
                             aria-label="Close"
                           >
-                            <i class="fa-regular fa-circle-xmark fs-4"></i>
+                            <i className="fa-regular fa-circle-xmark fs-4"></i>
                           </button>
                         </div>
                         <form>
-                          <div class="form-floating">
+                          <div className="form-floating">
                             <input
                               type="email"
-                              class="form-control rounded-0"
+                              className="form-control rounded-0"
                               id="flotingEmail"
                               placeholder="name@example.com"
                               autoComplete="off"
                             />
                             <label for="flotingEmail">Email address</label>
                           </div>
-                          <div class="form-floating position-relative">
+                          <div className="form-floating position-relative">
                             <input
                               type="password"
-                              class="form-control rounded-0"
+                              className="form-control rounded-0"
                               id="floatingPassword"
                               placeholder="Password"
                               autoComplete="off"
                             />
                             <span className="position-absolute eyeIcon">
-                              <i class="fa-regular fa-eye"></i>
+                              <i className="fa-regular fa-eye"></i>
                             </span>
                             <label for="floatingPassword">Password</label>
                           </div>

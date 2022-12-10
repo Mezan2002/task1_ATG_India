@@ -40,12 +40,12 @@ const Tabs = () => {
             <button className="btn me-2 bg-light">
               Write a Post
               <span className="ms-2">
-                <i class="fa-sharp fa-solid fa-caret-down"></i>
+                <i className="fa-sharp fa-solid fa-caret-down"></i>
               </span>
             </button>
             <button className="btn btn-primary">
               <span className="me-2">
-                <i class="fa-solid fa-user-plus"></i>
+                <i className="fa-solid fa-user-plus"></i>
               </span>
               Join Group
             </button>
@@ -61,7 +61,7 @@ const Tabs = () => {
         <button className="btn filterBtn">
           Filter: All{" "}
           <span className="ms-3">
-            <i class="fa-sharp fa-solid fa-caret-down"></i>
+            <i className="fa-sharp fa-solid fa-caret-down"></i>
           </span>{" "}
         </button>
       </div>

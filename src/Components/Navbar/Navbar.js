@@ -13,7 +13,7 @@ const Navbar = () => {
           </a>
           <form className="d-flex position-relative" role="search">
             <span>
-              <i class="fa-solid fa-magnifying-glass searchIcon"></i>
+              <i className="fa-solid fa-magnifying-glass searchIcon"></i>
             </span>
             <input
               type="search"
@@ -32,7 +32,7 @@ const Navbar = () => {
             <p className="mb-0">
               Create account. <span className="text-primary">It's free!</span>
               <span className="miniArrowBtn">
-                <i class="fa-sharp fa-solid fa-caret-down"></i>
+                <i className="fa-sharp fa-solid fa-caret-down"></i>
               </span>
             </p>
           </div>

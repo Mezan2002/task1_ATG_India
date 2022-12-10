@@ -26,7 +26,7 @@ const Banner = () => {
         </div>
         <div className="bannerTop d-flex">
           <p>
-            <i class="fa-solid fa-arrow-left fs-3 text-white"></i>
+            <i className="fa-solid fa-arrow-left fs-3 text-white"></i>
           </p>
           <button
             className="btn joinGroupBtn text-white"
