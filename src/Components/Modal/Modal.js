@@ -199,62 +199,94 @@ const Modal = () => {
               </button>
             </div>
             <div class="modal-body mt-4 pb-5 px-4" id="logInModal">
-              <div className="d-md-flex d-block" id="logInModal">
-                <div className="w-50">
-                  <h3 className="mb-4 d-none d-md-block">Sign In</h3>
-                  <div className="d-md-none d-flex justify-content-between">
-                    <h3 className="mb-4">Sign In</h3>
-                    <button
-                      type="button"
-                      class="btn p-0 mobileModalCloseBtn"
-                      data-bs-dismiss="modal"
-                      aria-label="Close"
-                    >
-                      <i class="fa-regular fa-circle-xmark fs-4"></i>
-                    </button>
+              <div className="container">
+                <div className="row">
+                  <div className="col-md-6">
+                    <div className="" id="logInModal">
+                      <div className="">
+                        <h3 className="mb-4 d-none d-md-block">Sign In</h3>
+                        <div className="d-md-none d-flex justify-content-between">
+                          <h3 className="mb-4">Sign In</h3>
+                          <button
+                            type="button"
+                            class="btn p-0 mobileModalCloseBtn"
+                            data-bs-dismiss="modal"
+                            aria-label="Close"
+                          >
+                            <i class="fa-regular fa-circle-xmark fs-4"></i>
+                          </button>
+                        </div>
+                        <form>
+                          <div class="form-floating">
+                            <input
+                              type="email"
+                              class="form-control rounded-0"
+                              id="flotingEmail"
+                              placeholder="name@example.com"
+                              autoComplete="off"
+                            />
+                            <label for="flotingEmail">Email address</label>
+                          </div>
+                          <div class="form-floating position-relative">
+                            <input
+                              type="password"
+                              class="form-control rounded-0"
+                              id="floatingPassword"
+                              placeholder="Password"
+                              autoComplete="off"
+                            />
+                            <span className="position-absolute eyeIcon">
+                              <i class="fa-regular fa-eye"></i>
+                            </span>
+                            <label for="floatingPassword">Password</label>
+                          </div>
+                          <p className="text-primary ms-2 mt-2">
+                            Forgotten Password?
+                          </p>
+                          <button
+                            type="submit"
+                            className="btn btn-primary w-100 rounded-5 py-2 fs-6 fw-bold my-4 d-none d-md-block"
+                          >
+                            Sign In
+                          </button>
+                          <div className="d-flex d-md-none align-items-center justify-content-between">
+                            <button
+                              type="submit"
+                              className="btn btn-primary rounded-5 w-50 py-2 fs-6 fw-bold my-4"
+                            >
+                              Sign In
+                            </button>
+                            <p className="mb-0">
+                              or,{" "}
+                              <span
+                                type="button"
+                                className="text-primary"
+                                data-bs-target="#signUpModal"
+                                data-bs-toggle="modal"
+                              >
+                                Create Account
+                              </span>
+                            </p>
+                          </div>
+                        </form>
+                        <button
+                          className="btn btn-outline-dark w-100 d-flex align-items-center 
+                      justify-content-center"
+                        >
+                          <img src={fbIcon} alt="" className="me-2" />
+                          Sign Up with Facebook
+                        </button>
+                        <button className="btn btn-outline-dark w-100 mt-2">
+                          <img src={googleIcon} alt="" className="me-2" />
+                          Sign Up with Google
+                        </button>
+                      </div>
+                    </div>
                   </div>
-                  <form>
-                    <div class="form-floating">
-                      <input
-                        type="email"
-                        class="form-control rounded-0"
-                        id="flotingEmail"
-                        placeholder="name@example.com"
-                        autoComplete="off"
-                      />
-                      <label for="flotingEmail">Email address</label>
-                    </div>
-                    <div class="form-floating position-relative">
-                      <input
-                        type="password"
-                        class="form-control rounded-0"
-                        id="floatingPassword"
-                        placeholder="Password"
-                        autoComplete="off"
-                      />
-                      <span className="position-absolute eyeIcon">
-                        <i class="fa-regular fa-eye"></i>
-                      </span>
-                      <label for="floatingPassword">Password</label>
-                    </div>
-                    <p className="text-primary ms-2 mt-2">
-                      Forgotten Password?
-                    </p>
-                    <button
-                      type="submit"
-                      className="btn btn-primary w-100 rounded-5 py-2 fs-6 fw-bold my-4 d-none d-md-block"
-                    >
-                      Sign In
-                    </button>
-                    <div className="d-flex d-md-none align-items-center justify-content-between">
-                      <button
-                        type="submit"
-                        className="btn btn-primary rounded-5 w-50 py-2 fs-6 fw-bold my-4"
-                      >
-                        Sign In
-                      </button>
-                      <p className="mb-0">
-                        or,{" "}
+                  <div className="col-md-6 col-none">
+                    <div className="d-none d-md-block">
+                      <p className="text-center">
+                        Don't have an account yet?{" "}
                         <span
                           type="button"
                           className="text-primary"
@@ -264,33 +296,9 @@ const Modal = () => {
                           Create Account
                         </span>
                       </p>
+                      <img src={loveImage} alt="" className="w-100 mt-3" />
                     </div>
-                  </form>
-                  <button
-                    className="btn btn-outline-dark w-100 d-flex align-items-center 
-                      justify-content-center"
-                  >
-                    <img src={fbIcon} alt="" className="me-2" />
-                    Sign Up with Facebook
-                  </button>
-                  <button className="btn btn-outline-dark w-100 mt-2">
-                    <img src={googleIcon} alt="" className="me-2" />
-                    Sign Up with Google
-                  </button>
-                </div>
-                <div className="w-50 d-none d-md-block">
-                  <p className="text-center">
-                    Don't have an account yet?{" "}
-                    <span
-                      type="button"
-                      className="text-primary"
-                      data-bs-target="#signUpModal"
-                      data-bs-toggle="modal"
-                    >
-                      Create Account
-                    </span>
-                  </p>
-                  <img src={loveImage} alt="" className="w-100 mt-3" />
+                  </div>
                 </div>
               </div>
             </div>

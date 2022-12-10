@@ -2,6 +2,7 @@ import React from "react";
 import "./Banner.css";
 import bannerImage from "../../images/bannerImage.svg";
 import mobileBannerImage from "../../images/bannerImageMobile.svg";
+import Modal from "../Modal/Modal";
 
 const Banner = () => {
   return (
@@ -36,6 +37,7 @@ const Banner = () => {
             Join Group
           </button>
         </div>
+        <Modal></Modal>
         <div className="bannerTextMobile">
           <h4>Computer Engineering</h4>
           <p>142,765 Computer Engineers follow this</p>

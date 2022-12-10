@@ -56,3 +56,6 @@
 .mobileModalCloseBtn {
   margin-top: -22px;
 }
+.modalDailogue {
+  height: 75% !important;
+}

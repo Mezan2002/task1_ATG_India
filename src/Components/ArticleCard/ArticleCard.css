@@ -62,3 +62,27 @@
 .date {
   margin-right: 48px;
 }
+.categoryNameMobile {
+  font-size: 14px;
+  font-weight: 500;
+}
+.mobileArticleCardsHeader {
+  font-weight: 600;
+  font-size: 14px;
+}
+.mobileArticleCardDescription {
+  font-size: 14px;
+}
+.mobileArticleCardTags {
+  font-size: 12px;
+}
+.postBtn {
+  width: 54px;
+  height: 54px;
+  border-radius: 50%;
+  background: linear-gradient(180deg, #ff5c5c 0%, #f0568a 100%);
+  position: fixed;
+  bottom: 18px;
+  right: 18px;
+  z-index: 100;
+}
