@@ -3,7 +3,10 @@ import loveImage from "../../images/love.svg";
 import fbIcon from "../../images/fbIcon.svg";
 import googleIcon from "../../images/google.svg";
 
-const Modal = () => {
+const Modal = ({ setLoggedIn }) => {
+  const handleForm = (event) => {
+    event.preventDefault();
+  };
   return (
     <div>
       {/* sign up modal start */}
@@ -48,7 +51,7 @@ const Modal = () => {
                       <i className="fa-regular fa-circle-xmark fs-4"></i>
                     </button>
                   </div>
-                  <form>
+                  <form onSubmit={handleForm}>
                     <div className="input-group">
                       <div className="form-floating">
                         <input
@@ -105,7 +108,7 @@ const Modal = () => {
                       </label>
                     </div>
                     <button
-                      type="submit"
+                      onClick={() => setLoggedIn(true)}
                       className="btn btn-primary w-100 rounded-5 py-2 fs-6 fw-bold my-4 d-none d-md-block"
                     >
                       Create Account

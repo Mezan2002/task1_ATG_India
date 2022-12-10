@@ -1,7 +1,7 @@
 import React from "react";
 import "./Tabs.css";
 
-const Tabs = () => {
+const Tabs = ({ loggedIn }) => {
   return (
     <div>
       {/* Desktop tabs start */}
@@ -43,12 +43,21 @@ const Tabs = () => {
                 <i className="fa-sharp fa-solid fa-caret-down"></i>
               </span>
             </button>
-            <button className="btn btn-primary">
-              <span className="me-2">
-                <i className="fa-solid fa-user-plus"></i>
-              </span>
-              Join Group
-            </button>
+            {loggedIn === true ? (
+              <button className="btn btn-outline-secondary">
+                <span className="me-2">
+                  <i class="fa-solid fa-right-from-bracket"></i>
+                </span>
+                Leave Group
+              </button>
+            ) : (
+              <button className="btn btn-primary">
+                <span className="me-2">
+                  <i className="fa-solid fa-user-plus"></i>
+                </span>
+                Join Group
+              </button>
+            )}
           </div>
         </div>
         <hr className="container" />

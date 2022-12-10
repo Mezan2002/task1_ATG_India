@@ -2,8 +2,9 @@ import React from "react";
 import logo from "../../logo.svg";
 import "./Navbar.css";
 import Modal from "../Modal/Modal";
+import user from "../../images/userNavbarImage.svg";
 
-const Navbar = () => {
+const Navbar = ({ setLoggedIn, loggedIn }) => {
   return (
     <div>
       <nav className="navbar d-none d-lg-block">
@@ -23,22 +24,39 @@ const Navbar = () => {
               className="searchField"
             />
           </form>
-          <div
-            className="d-flex"
-            data-bs-toggle="modal"
-            href="#signUpModal"
-            role="button"
-          >
-            <p className="mb-0">
-              Create account. <span className="text-primary">It's free!</span>
-              <span className="miniArrowBtn">
-                <i className="fa-sharp fa-solid fa-caret-down"></i>
-              </span>
-            </p>
-          </div>
+          {loggedIn === true ? (
+            <div
+              className="d-flex"
+              data-bs-toggle="modal"
+              href="#signUpModal"
+              role="button"
+            >
+              <p className="mb-0">
+                <img src={user} className="miniImage" alt="" />
+                Siddharth Goyal
+                <span className="miniArrowBtn">
+                  <i className="fa-sharp fa-solid fa-caret-down"></i>
+                </span>
+              </p>
+            </div>
+          ) : (
+            <div
+              className="d-flex"
+              data-bs-toggle="modal"
+              href="#signUpModal"
+              role="button"
+            >
+              <p className="mb-0">
+                Create account. <span className="text-primary">It's free!</span>
+                <span className="miniArrowBtn">
+                  <i className="fa-sharp fa-solid fa-caret-down"></i>
+                </span>
+              </p>
+            </div>
+          )}
         </div>
       </nav>
-      <Modal></Modal>
+      <Modal setLoggedIn={setLoggedIn}></Modal>
     </div>
   );
 };
