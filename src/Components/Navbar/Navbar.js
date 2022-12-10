@@ -25,12 +25,7 @@ const Navbar = ({ setLoggedIn, loggedIn }) => {
             />
           </form>
           {loggedIn === true ? (
-            <div
-              className="d-flex"
-              data-bs-toggle="modal"
-              href="#signUpModal"
-              role="button"
-            >
+            <div className="d-flex">
               <p className="mb-0">
                 <img src={user} className="miniImage" alt="" />
                 Siddharth Goyal

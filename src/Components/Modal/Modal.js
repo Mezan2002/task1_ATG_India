@@ -115,7 +115,7 @@ const Modal = ({ setLoggedIn }) => {
                     </button>
                     <div className="d-flex d-md-none align-items-center justify-content-between">
                       <button
-                        type="submit"
+                        onClick={() => setLoggedIn(true)}
                         className="btn btn-primary rounded-5 w-50 py-2 fs-6 fw-bold my-4"
                       >
                         Create Account
@@ -136,11 +136,15 @@ const Modal = ({ setLoggedIn }) => {
                   <button
                     className="btn btn-outline-dark w-100 d-flex align-items-center 
                       justify-content-center"
+                    onClick={() => setLoggedIn(true)}
                   >
                     <img src={fbIcon} alt="" className="me-2" />
                     Sign Up with Facebook
                   </button>
-                  <button className="btn btn-outline-dark w-100 mt-2">
+                  <button
+                    className="btn btn-outline-dark w-100 mt-2"
+                    onClick={() => setLoggedIn(true)}
+                  >
                     <img src={googleIcon} alt="" className="me-2" />
                     Sign Up with Google
                   </button>
@@ -219,7 +223,7 @@ const Modal = ({ setLoggedIn }) => {
                             <i className="fa-regular fa-circle-xmark fs-4"></i>
                           </button>
                         </div>
-                        <form>
+                        <form onSubmit={handleForm}>
                           <div className="form-floating">
                             <input
                               type="email"
@@ -248,7 +252,9 @@ const Modal = ({ setLoggedIn }) => {
                           </p>
                           <button
                             type="submit"
-                            className="btn btn-primary w-100 rounded-5 py-2 fs-6 fw-bold my-4 d-none d-md-block"
+                            className="btn btn-primary w-100 rounded-5 py-2 fs-6 fw-bold my-4 d-none 
+                            d-md-block"
+                            onClick={() => setLoggedIn(true)}
                           >
                             Sign In
                           </button>
@@ -256,6 +262,7 @@ const Modal = ({ setLoggedIn }) => {
                             <button
                               type="submit"
                               className="btn btn-primary rounded-5 w-50 py-2 fs-6 fw-bold my-4"
+                              onClick={() => setLoggedIn(true)}
                             >
                               Sign In
                             </button>
@@ -275,11 +282,15 @@ const Modal = ({ setLoggedIn }) => {
                         <button
                           className="btn btn-outline-dark w-100 d-flex align-items-center 
                       justify-content-center"
+                          onClick={() => setLoggedIn(true)}
                         >
                           <img src={fbIcon} alt="" className="me-2" />
                           Sign Up with Facebook
                         </button>
-                        <button className="btn btn-outline-dark w-100 mt-2">
+                        <button
+                          className="btn btn-outline-dark w-100 mt-2"
+                          onClick={() => setLoggedIn(true)}
+                        >
                           <img src={googleIcon} alt="" className="me-2" />
                           Sign Up with Google
                         </button>

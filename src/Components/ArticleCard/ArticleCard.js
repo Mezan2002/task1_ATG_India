@@ -335,25 +335,36 @@ const ArticleCard = ({ loggedIn }) => {
                 Recommended Groups
               </h5>
               <div>
-                <div className="d-flex align-items-center justify-content-between mt-4">
-                  <img src={groupIcon1} alt="" />
-                  <p>Leisure</p>
+                <div className="d-flex align-items-center justify-content-between my-4">
+                  <div className="d-flex align-items-center">
+                    <img src={groupIcon1} className="me-3" alt="" />
+                    <p className="mb-0">Leisure</p>
+                  </div>
                   <button className="btn btn-outline-dark">Follow</button>
                 </div>
-                <div className="d-flex align-items-center justify-content-between">
-                  <img src={groupIcon2} alt="" />
-                  <p>Leisure</p>
+                <div className="d-flex align-items-center justify-content-between my-4">
+                  <div className="d-flex align-items-center">
+                    <img src={groupIcon2} className="me-3" alt="" />
+                    <p className="mb-0">Activism</p>
+                  </div>
                   <button className="btn btn-outline-dark">Follow</button>
                 </div>
-                <div className="d-flex align-items-center justify-content-between">
-                  <img src={groupIcon3} alt="" />
-                  <p>Leisure</p>
+                <div className="d-flex align-items-center justify-content-between my-4">
+                  <div className="d-flex align-items-center">
+                    <img src={groupIcon3} className="me-3" alt="" />
+                    <p className="mb-0">MBA</p>
+                  </div>
                   <button className="btn btn-outline-dark">Follow</button>
                 </div>
-                <div className="d-flex align-items-center justify-content-between">
-                  <img src={groupIcon4} alt="" />
-                  <p>Leisure</p>
+                <div className="d-flex align-items-center justify-content-between my-4">
+                  <div className="d-flex align-items-center">
+                    <img src={groupIcon4} className="me-3" alt="" />
+                    <p className="mb-0">Philosophy</p>
+                  </div>
                   <button className="btn btn-outline-dark">Follow</button>
+                </div>
+                <div>
+                  <p className="text-center text-primary">See More...</p>
                 </div>
               </div>
             </div>

@@ -4,7 +4,7 @@ import bannerImage from "../../images/bannerImage.svg";
 import mobileBannerImage from "../../images/bannerImageMobile.svg";
 import Modal from "../Modal/Modal";
 
-const Banner = () => {
+const Banner = ({ loggedIn }) => {
   return (
     <div>
       {/* Desktop Banner start */}
@@ -28,14 +28,20 @@ const Banner = () => {
           <p>
             <i className="fa-solid fa-arrow-left fs-3 text-white"></i>
           </p>
-          <button
-            className="btn joinGroupBtn text-white"
-            type="button"
-            data-bs-toggle="modal"
-            data-bs-target="#signUpModal"
-          >
-            Join Group
-          </button>
+          {loggedIn === true ? (
+            <button className="btn joinGroupBtn text-white" type="button">
+              Leave Group
+            </button>
+          ) : (
+            <button
+              className="btn joinGroupBtn text-white"
+              type="button"
+              data-bs-toggle="modal"
+              data-bs-target="#signUpModal"
+            >
+              Join Group
+            </button>
+          )}
         </div>
         <Modal></Modal>
         <div className="bannerTextMobile">

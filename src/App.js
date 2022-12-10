@@ -10,7 +10,7 @@ function App() {
   return (
     <div className="app">
       <Navbar loggedIn={loggedIn} setLoggedIn={setLoggedIn}></Navbar>
-      <Banner></Banner>
+      <Banner loggedIn={loggedIn}></Banner>
       <Tabs loggedIn={loggedIn}></Tabs>
       <ArticleCard loggedIn={loggedIn}></ArticleCard>
     </div>
